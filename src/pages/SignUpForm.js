@@ -51,20 +51,7 @@ class SignUpForm extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <div className="formField">
-            <label className="formFieldLabel" htmlFor="password">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              className="formFieldInput"
-              placeholder="Enter your password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-            />
-          </div>
+
           <div className="formField">
             <label className="formFieldLabel" htmlFor="email">
               E-Mail Address
@@ -81,6 +68,66 @@ class SignUpForm extends Component {
           </div>
 
           <div className="formField">
+            <label className="formFieldLabel" htmlFor="phone">
+              Phone
+            </label>
+            <input
+              type="text"
+              id="phone"
+              className="formFieldInput"
+              placeholder="Enter your phone number"
+              name="phone"
+              value={this.state.phone}
+              onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="formField">
+            <label className="formFieldLabel" htmlFor="address">
+              Address
+            </label>
+            <input
+              type="text"
+              id="address"
+              className="formFieldInput"
+              placeholder="Enter your home address"
+              name="address"
+              value={this.state.address}
+              onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="formField">
+            <label className="formFieldLabel" htmlFor="maddress">
+              Metamask Address
+            </label>
+            <input
+              type="text"
+              id="maddress"
+              className="formFieldInput"
+              placeholder="Enter your Metamask Address"
+              name="maddress"
+              value={this.state.maddress}
+              onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="formField">
+            <label className="formFieldLabel" htmlFor="password">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="formFieldInput"
+              placeholder="Enter your password"
+              name="password"
+              value={this.state.password}
+              onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="formField">
             <label className="formFieldCheckboxLabel">
               <input
                 className="formFieldCheckbox"
@@ -91,7 +138,7 @@ class SignUpForm extends Component {
               />{" "}
               I agree all statements in{" "}
               <a href="null" className="formFieldTermsLink">
-                terms of service
+                the Terms Of Service
               </a>
             </label>
           </div>
@@ -99,7 +146,7 @@ class SignUpForm extends Component {
           <div className="formField">
             <button className="formFieldButton">Sign Up</button>{" "}
             <Link to="/sign-in" className="formFieldLink">
-              I'm already member
+              I'm already a member
             </Link>
           </div>
         </form>
