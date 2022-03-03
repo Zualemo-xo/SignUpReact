@@ -113,21 +113,6 @@ class SignUpForm extends Component {
           </div>
 
           <div className="formField">
-            <label className="formFieldLabel" htmlFor="password">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              className="formFieldInput"
-              placeholder="Enter your password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-            />
-          </div>
-
-          <div className="formField">
             <label className="formFieldCheckboxLabel">
               <input
                 className="formFieldCheckbox"
@@ -145,9 +130,9 @@ class SignUpForm extends Component {
 
           <div className="formField">
             <button className="formFieldButton">Sign Up</button>{" "}
-            <Link to="/sign-in" className="formFieldLink">
+            {/* <Link to="/sign-in" className="formFieldLink">
               I'm already a member
-            </Link>
+            </Link> */}
           </div>
         </form>
       </div>
